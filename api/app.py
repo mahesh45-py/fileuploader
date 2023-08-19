@@ -2,7 +2,7 @@ from flask import Flask, render_template, request, redirect, url_for
 from werkzeug.utils import secure_filename
 import os
 app = Flask(__name__)
-directory_path = os.getcwd()+'/api/tmp'
+directory_path = os.getcwd()+'/tmp'
 app.config['UPLOAD_FOLDER'] = directory_path
 
 def getFiles():
