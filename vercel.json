@@ -1,4 +1,10 @@
-{
+{"functions": {
+    
+    "/api/app": {
+      "memory": 1024,
+      "includeFiles": "tmp/*"
+    }
+  },
     "rewrites": [
         { "source": "(.*)", "destination": "/api/app" }
     ]
